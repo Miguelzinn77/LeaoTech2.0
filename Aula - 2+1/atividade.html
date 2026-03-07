@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade - Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulário de Candidatura</h1>
+
+    <form>
+      <label for="name">Digite seu nome : </label>
+      <input type="text" id="nome" placeholder="digite seu nome" />
+      <br />
+
+      <label for="email">Digite seu email</label>
+      <input type="text" id="email" placeholder="digite seu email" />
+      <br />
+
+      <label for="cargo"> Cargo de Tecnologia </label>
+      <select name="cargo" id="cargo">
+        <option value="Full">Full</option>
+        <option value="Back">Back</option>
+        <option value="Front">Front</option>
+        <option value="professor">Professor</option>
+      </select>
+      <br />
+
+      <label for="sexo">Genero</label>
+      <input type="checkbox" />Masculino <input type="checkbox" />Feminino
+      <input type="checkbox" />Trans <input type="checkbox" />Voce q sabe o que
+      vc quer ser
+      <br />
+
+      <label for="interesse">Unidade de interesse:</label>
+      <input type="checkbox" /> Fortaleza <input type="checkbox" /> Caucaia
+      <input type="checkbox" /> Eusébio <br /><br />
+      <label for="meuTexto"> Fale mais sobre voce :</label><br />
+      <textarea type="message" id="meuTexto" name="meuTexto" rows="5">
+     Enviar mensagem </textarea
+      ><br>
+
+      <input type="submit" value="enviar"/>
+    </form>
+  </body>
+</html>
+git
