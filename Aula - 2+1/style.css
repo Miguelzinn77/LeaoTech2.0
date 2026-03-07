@@ -1,4 +1,7 @@
-body{
-    background-color: rgb(146, 146, 89);
-text-transform: capitalize;
+
+.container {
+    background-color: rgb(202, 202, 134);
+    width:200px;
+    width: 650px;  
+    height: 250px;  
 }
