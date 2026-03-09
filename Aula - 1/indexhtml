@@ -1,0 +1,34 @@
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Bolo </title>
+        </head>
+        <body>
+            <h1> Bolo Simples </h1>
+
+            <h2> Ingredientes </h2>
+            <ul>
+            <li>
+        Farinha de Trigo: 2 xícaras de chá <br>
+        Açúcar: 1 xícara de chá<br>
+        Ovos: 3 unidades (separe as claras das gemas)<br>
+        Leite: 1 xícara de chá<br>
+        Margarina: 100 gramas (ou manteiga)<br>
+        Fermento em Pó: 1 colher de sopa
+            </li>
+    </ul>
+    <h2> Modo de Preparo </h2>
+    <ul>
+    <li>
+    Bata as claras em neve e reserve.</li><br>
+    Em uma tigela, misture as gemas, a margarina e o açúcar até obter uma massa homogênea.
+    Adicione o leite e a farinha de trigo aos poucos, sem parar de bater.
+    Por último, incorpore as claras em neve e o fermento delicadamente.
+    Despeje a massa em uma forma untada e enfarinhada.
+    Asse em forno pré-aquecido a 180 °C por aproximadamente 40 minutos, ou até que um palito inserido no centro saia limpo.
+    </li>
+    </ul>
+        </body>
+        </html>

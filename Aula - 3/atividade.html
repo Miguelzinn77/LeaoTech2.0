@@ -29,18 +29,20 @@
       </select>
       <br />
 
-      <label for="sexo">Genero</label>
-      <input type="checkbox" />Masculino <input type="checkbox" />Feminino
-      <input type="checkbox" />Trans <input type="checkbox" />Voce q sabe o que
-      vc quer ser
+      <label for="sexo" name="Genero" id="Genero" value="Genero"> Genero</label>
+      <input type="checkbox" />Masculino
+       <input type="checkbox" /> Feminino
+      <input type="checkbox" />Outro
+      <input type="checkbox" /> Voce que sabe.
       <br />
 
-      <label for="interesse">Unidade de interesse:</label>
-      <input type="checkbox" /> Fortaleza <input type="checkbox" /> Caucaia
-      <input type="checkbox" /> Eusébio <br /><br />
+      <label for="interesse" name="Unidade">Unidade de interesse:</label>
+      <input type="checkbox" name="Unidade" id="Fortaleza" value="Fortaleza"/> Fortaleza 
+      <input type="checkbox" name="Caucaia" id="Caucaia" value="Caucaia"/> Caucaia
+      <input type="checkbox" name="Unidade" id="Eusébio" value="Eusébio" /> Eusébio <br /><br />
+
       <label for="meuTexto"> Fale mais sobre voce :</label><br />
-      <textarea type="message" id="meuTexto" name="meuTexto" rows="5">
-     Enviar mensagem </textarea
+      <textarea type="message" id="meuTexto" name="meuTexto" rows="5"> Enviar mensagem </textarea
       ><br>
 
       <input type="submit" value="enviar"/>
