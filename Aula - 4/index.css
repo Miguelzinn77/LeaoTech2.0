@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(191, 149, 204);
+}
+
+#border{
+    border-style: solid 2px;
+    font-size: 20px;
+}
+
+#paragrafo{
+    color: aqua;
+}
