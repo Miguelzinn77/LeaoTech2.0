@@ -1,0 +1,61 @@
+h1 {
+  color: #2e2727;
+  padding: 10px;
+  text-align: left;
+}
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+#titulo1 {
+  border: 2px solid green;
+  color: red;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#titulo2 {
+  border: 2px solid green;
+  color: red;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+}
+
+.vermelho {
+  background-color: aqua;
+  width: 20%;
+  height: 50px;
+}
+.amarelo {
+  background-color: purple;
+  width: 40%;
+  height: 60px;
+}
+.verde {
+  background-color: violet;
+  width: 60%;
+  height: 70px;
+}
+.azul {
+  background-color: tomato;
+  width: 80%;
+  height: 80px;
+}
+
+.imagem1 {
+  width: 25%;
+}
+.imagem2 {
+  width: 25%;
+}
+.imagem3 {
+  width: 25%;
+}
+.imagem4 {
+  width: 25%;
+}
