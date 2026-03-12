@@ -3,13 +3,11 @@ h1 {
   padding: 10px;
   text-align: left;
 }
-
 body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
 }
-
 #titulo1 {
   border: 2px solid green;
   color: red;
@@ -17,7 +15,6 @@ body {
   margin: 10px;
   text-align: center;
 }
-
 #titulo2 {
   border: 2px solid green;
   color: red;
@@ -25,7 +22,6 @@ body {
   margin: 15px;
   text-align: center;
 }
-
 .vermelho {
   background-color: aqua;
   width: 20%;
@@ -46,7 +42,6 @@ body {
   width: 80%;
   height: 80px;
 }
-
 .imagem1 {
   width: 25%;
 }
@@ -58,4 +53,33 @@ body {
 }
 .imagem4 {
   width: 25%;
+}
+#caixa1 {
+  text-align: center;
+  border: 2px solid;
+  width: 20%;
+  display: inline-block;
+  height: 70px;
+  margin: 10px;
+  padding: 10px;
+}
+#caixa {
+  text-align: center;
+  border: 2px solid black;
+  width: 20%;
+  display: block;
+  height: 70px;
+  padding: 20px;
+  margin: 30px;
+}
+.miguel {
+  background-color: tan;
+  margin: 20px;
+  padding: 5px;
+  border: 5px solid rgb(0, 128, 32);
+}
+.luis {
+  margin: 20px;
+  padding: 5px;
+  border: 5px solid rgb(0, 128, 0);
 }
