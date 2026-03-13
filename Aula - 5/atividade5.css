@@ -1,0 +1,27 @@
+
+body{
+    text-align: center;
+}
+.conteudo{
+    text-align:center; border: 2px solid blue; background-color: #f0f0f0; font-family: Arial, sans-serif; margin: 50px;
+    margin: 10px;
+    display: inline-block;
+}
+.paragrafo{
+    border: 2px solid#adc9d6;  margin: 15px; background-color: #adc9d6; padding: 20px; padding: 5px;
+    display: inline-block;
+}
+.leao-tech{
+    border: solid 5px red;
+    padding: 5px;
+}
+.tema{
+    border: 2px solid red;
+    background-color: rgb(5, 5, 145);
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 100px;
+    color: white;
+}
