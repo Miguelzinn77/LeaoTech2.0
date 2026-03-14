@@ -22,12 +22,13 @@ p{
 .imagem{
     border:3px solid red;
     display: inline-block;
-    align-items: end;
     height: 250px;
+    justify-content: end;
 }
 .receita{
     border: 2px solid chocolate;
     margin: 10px;
+    display: flex;
 }
 .ingredientes{
     border: 2px solid chocolate;
