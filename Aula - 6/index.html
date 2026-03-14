@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+</head>
+
+<body>
+    <h1> Display - Flex </h1>
+
+    <style>
+        .container {
+            border: 2px solid black;
+            /* height é altura */
+            height: 500px;
+            padding: 10px;
+            display: flex;
+            /* colum-reverse deixa ao contrário,
+    colum deixa em coluna */
+            flex-direction: row;
+            /* row e wrap quebra a linha automaticamente se preencher o conteúdo do container */
+            flex-wrap: wrap;
+            /* justify content - alinha na horizontal, start da esquerda pra direita, e end da direita pra esquerda e center, space-between coloca nas pontas e divide o espaço, space-around da um espaço das bordas,*/
+            justify-content: baseline;
+            /* align-end - coloca o conteúdo em baixo */
+            align-content: start;
+
+            align-items: baseline;
+
+        }
+
+        /* aqui ele pega a div que está dentro da div container que é a principal */
+        div div {
+            margin: 10px;
+        }
+        .div1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .div2 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+        .div3 {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+        }
+        .div4 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        .div5 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+    <div class="container">
+
+        <div class="div1">div 1</div>
+
+        <div class="div2">div 2</div>
+
+        <div class="div3">div 3</div>
+
+        <div class="div4">div 4</div>
+
+        <div class="div5">div 5</div>
+
+    </div>
+</body>
+
+</html>
