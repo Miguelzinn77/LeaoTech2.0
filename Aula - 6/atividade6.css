@@ -35,6 +35,7 @@ margin: 5px;
 }
 .ingredientes,
 .modo-de-preparo{
+    margin: 10px;
     width:48%;
     border:2px solid chocolate;
     padding:15px;
@@ -48,6 +49,7 @@ margin: 5px;
     justify-content:space-between;
 }
 .queijo{
+    margin: 10px;
     width:30%;
     border:2px solid chocolate;
     padding:15px;
