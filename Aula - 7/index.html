@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula - 7 </title>
+<style>
+*{
+    margin: 0;
+    /* margin-botton da uma rolagem a página */
+    margin-bottom: 200px;
+    background-color: thistle;
+}
+#caixa1{
+    /* Linear para misturas as cores na caixa */
+    background: linear-gradient(blue,green,yellow);
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+}
+/* hover para mudar de cor quando o mouse passar por cima */
+#caixa1:hover{
+background:  yellow;
+transition: 0.7s;
+transform: scale(0.1);
+}
+#formulario{
+    margin: 20px;
+    background-color: aqua;
+    margin-top: 10px;
+    width: 200px;
+    height: 120px;
+    /* box shadow faz um sombreamento ao redor - deslocamento, */
+    box-shadow: 10px 10px 10px 10px red;
+}
+/* focus muda a cor quando clica em cima */
+#nome:focus{
+    background-color: blueviolet;
+}
+#container{
+    display: flex;
+    border: 2px solid black;
+}
+.fundo{
+    border: 2px solid black;
+    background-color: darkblue;
+    margin: 10px;
+    width: 100px;
+    height: 200px;
+}
+.div4{
+       border: 2px solid black;
+       position: relative;
+    margin: 10px;
+    width: 100px;
+    height: 200px;
+}
+.container{
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+    background-color: violet;
+}
+.containercaixa{
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div id="caixa1">
+<h1>caixa 1</h1>
+</div>
+
+<div id="formulario">
+<label for="nome">nome</label>
+<input type="text" id="nome">
+</div>
+
+<div id="container">
+
+<div class="fundo">caixa1</div>
+<div class="fundo">caixa 2</div>
+<div class="fundo">caixa 3</div>
+    </div>
+    <div class="container">
+        <div class="containercaixa">caixa</div>
+    </div>
+
+</body>
+</html>
