@@ -1,60 +1,81 @@
-header{
-    background-color: brown;
-    text-align: center;
-    padding: 10px;
+
+.cabecalho{
+background-color:tomato;
+color:white;
+text-align:center;
+padding:20px;
 }
-h1{
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-}
-p{
-    display: inline;
-    border: 2px solid white;
-    padding: 2px;
-    margin: 5px;
-    color: cornsilk;
-    font-family: 'Courier New', Courier, monospace;
-}
-.macarronada{
-    color: black;
-    flex-direction: row;
-}
-.imagem{
-    border:3px solid red;
+.paragrafo {
     display: inline-block;
-    height: 250px;
-    justify-content: end;
+    margin: 10px 10px;
+    border: 2px solid white;
+    padding: 5px;
+}
+.principal{
+    width: 90%;
+    margin: auto;
 }
 .receita{
-    border: 2px solid chocolate;
-    margin: 10px;
     display: flex;
-}
-.ingredientes{
+    justify-content: space-between;
+    align-items: center;
     border: 2px solid chocolate;
-    margin: 10px;
-    display: inline-block;
-    height: 300px;
-    width: 500px;
+    padding: 20px;
+    margin: 15px 0;
 }
-h3{
-    text-align: center;
+.imagem{
+border: 2px solid red;
+display: inline-block;
+margin: 5px;
 }
-.dicas{
-     border: 2px solid chocolate;
-     margin: 15px;
-     display: inline-block;
-     text-align: center;
-     flex-direction: row;
-     align-content: start;
+.bloco-receita{
+    display:flex;
+    justify-content: space-between;
+    margin:15px 0;
 }
-.queijoralado{
-    margin: 30px;
+.ingredientes,
+.modo-de-preparo{
+    width:48%;
+    border:2px solid chocolate;
+    padding:15px;
+    background-color:rgb(224,218,214);
+}
+.chef{
+    border:2px solid chocolate;
+    padding:20px;
+    margin:15px 0;
+    display:flex;
+    justify-content:space-between;
+}
+.queijo{
+    width:30%;
+    border:2px solid chocolate;
+    padding:15px;
+    background-color:rgb(224,218,214);
+}
+.sugestao{
     border: 2px solid chocolate;
-    display: inline-block;
-    width: 500px;
-    text-align: center;
+    padding: 15px;
 }
-.dicaqueijo{
-    color: black;
+.conteudo-sugestao{
+    margin: 5px;
+    padding: 5px;
+}
+.type-enviar{
+width:100%;
+background-color: tomato;
+color:white;
+padding:10px;
+border:none;
+}
+.area-de-texto{
+    width: 100%;
+}
+.nome{
+    display: inline-block;
+    width: 100%;
+}
+.email{
+    display: inline-block;
+    width: 100%;
 }
