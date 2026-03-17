@@ -1,15 +1,23 @@
-
+*{
+    margin: 0;
+}
 .cabecalho{
 background-color:tomato;
 color:white;
 text-align:center;
-padding:20px;
+padding:10px;
+position: sticky;
+top: 0;
+box-shadow: 5px 5px 5px black;
 }
-.paragrafo {
+.paragrafo:hover{
+    background-color: rgb(80, 63, 231);
     display: inline-block;
     margin: 10px 10px;
     border: 2px solid white;
     padding: 5px;
+    transition: 0.7s;
+
 }
 .principal{
     width: 90%;
@@ -22,6 +30,7 @@ padding:20px;
     border: 2px solid chocolate;
     padding: 20px;
     margin: 15px 0;
+    box-shadow: 10px 10px  10px red;
 }
 .imagem{
 border: 2px solid red;
@@ -40,6 +49,8 @@ margin: 5px;
     border:2px solid chocolate;
     padding:15px;
     background-color:rgb(224,218,214);
+    box-shadow: 10px 10px  10px red;
+
 }
 .chef{
     border:2px solid chocolate;
@@ -47,6 +58,8 @@ margin: 5px;
     margin:15px 0;
     display:flex;
     justify-content:space-between;
+        box-shadow: 10px 10px  10px red;
+
 }
 .queijo{
     margin: 10px;
@@ -54,10 +67,13 @@ margin: 5px;
     border:2px solid chocolate;
     padding:15px;
     background-color:rgb(224,218,214);
+    box-shadow: 10px 10px  10px yellowgreen;
+
 }
 .sugestao{
     border: 2px solid chocolate;
     padding: 15px;
+    box-shadow: 10px 10px  10px yellowgreen;
 }
 .conteudo-sugestao{
     margin: 5px;

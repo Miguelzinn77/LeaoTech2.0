@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+body {
+    height: 2000px;
+}
+.menu{
+    /* com top = 0 e position = relative, o menu fica fixo em cima paradinho na tela quando rola a tela */
+    top: 0px;
+    position: sticky;
+    background-color: black;
+    color: wheat;
+    padding: 15px;
+}
+.box{
+    position: sticky;
+    top: 50px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
