@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+.gato-miguel{
+    border: 2px solid yellow;
+    margin: 5px;
+    display: flex;
+    box-shadow: 10px 10px 5px grey;
+}
+.mig-cat{
+    border: 2px solid yellowgreen;
+    display: flex;
+    margin: 15px;
+    box-shadow: 10px 10px 5px grey;
+}
