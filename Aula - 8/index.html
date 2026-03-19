@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="bootstrap-5.3.8/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="margin-bottom: 500px;">
+
     <h1>Aula - 8 : Introdução ao BOOTSTRAP</h1>
 
     <button type="button" class="btn btn-primary btn-sm m-5">Small button</button>
@@ -32,9 +33,42 @@
  </div>
 </div>
 
+<header class="conteiner-fluid bg-info "> cabecalho </header>
+<!-- container = um espaço, container-fluid = pega a tela toda -->
+<div class="container border border-black">
+    <!-- uma row passa uma linha que já deixa um display-flex automatico -->
+<div class="row">
+    <!-- col = passa coluna na div, mas nao fica mais com display-flex automatico, col + algum numero por exemplo col-5 é o espaço que uma coluna ocupa -->
+<div class="col-12 m-2 p-2">
+<h2>header com 12 colunas</h2>
+</div>
 
+<div class="col-9 border border-danger p-5">
+    div com 9 colunas
+</div>
+<div class="col-3 border border-danger p-3">
+    div com 3 colunas
+</div>
 
+<div class="col-12 p-2 border border-danger">
+    div com 12 colunas
+</div>
+</div>
+</div>
+<!-- Modify the HTML code for the purple boxes below so it behaves like the green ones. -->
+ <br>
+ <div class="container border border-danger m-2">
+    <div class="row">
+        <div class="col-6 border border-warning p-3">
+        50% desktop, 100% mobile
+        </div>
+     <div class="col-6 border border-warning p-3">
+        50% desktop, 100% mobile
+        </div>
+  </div>
+</div>
 
+    
 
     <!-- BOOTSTRAP JavaSscript -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
