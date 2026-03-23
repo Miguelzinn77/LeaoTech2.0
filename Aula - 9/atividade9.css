@@ -1,0 +1,44 @@
+*{
+    margin: 1px;
+}
+.cabeca-conteiner-2{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.titulo-conteiner-2{
+    color: red;
+}
+.numero{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.numero-book{
+    color: red;
+}
+button{
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    margin: 10px;
+}
+.parte-de-baixo-01{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 5px;
+    background-color: red;
+    color: white; 
+}
+.parte-de-baixo{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+.LM{
+    border: 2px solid white; 
+    color: white;
+    border-radius: 20px;
+}
