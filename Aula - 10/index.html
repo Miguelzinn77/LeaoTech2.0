@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula - 10</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.8/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- sm → ≥576px ,
+    md → ≥768px,
+    lg → ≥992px, 
+    xl → ≥1200px, 
+    xxl → ≥1400px -->
+
+    <h1>revisao de responsividade</h1>
+    <div class="container">
+      <p class="text-lg-end text-md-center text-start">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora
+        facere nisi impedit quisquam delectus numquam tempore culpa autem id sit
+        natus vel, earum ratione! Maiores repudiandae dolorem ut id!
+      </p>
+    </div>
+
+    <style>
+      .caixa {
+        color: black;
+        padding: 20px;
+        margin: 10px;
+        border: 2px solid red;
+      }
+    </style>
+
+    <div class="container border border-danger">
+      <div v class="row">
+        <div class="col-12 col-md-6 d-md-none caixa bg-danger">
+          <p>caixa 1</p>
+        </div>
+        <div class="caixa bg-warning">
+          <p>caixa 2</p>
+        </div>
+        <div class="caixa bg-success">
+          <p>caixa 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- offset para deixar um espaço -->
+    <div class="container">
+      <div class="row">
+        <div class="col-16 col-md-4 offset-md-4 caixa bg-primary">
+          <p>caixa 4</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="bootstrap-5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</html>
