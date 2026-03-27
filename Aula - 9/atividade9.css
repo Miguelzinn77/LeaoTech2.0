@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 .container-fluid{
     background-color: thistle;
@@ -45,4 +46,9 @@ button{
     padding: 50px;
     margin: 5px;
     color: white;
+}
+.titulo-cardapio{
+    color: red;
+    font-size: 40px;
+    text-align: end;
 }
