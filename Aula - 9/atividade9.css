@@ -3,7 +3,10 @@ body{
     margin: 0px;
 }
 .container-fluid{
-    background-color: thistle;
+    background-color: rgb(243, 234, 243);
+}
+.principal{
+    text-align: center
 }
 .book-a-table{
     background-color: red;
