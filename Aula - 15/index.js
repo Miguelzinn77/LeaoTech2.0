@@ -21,6 +21,10 @@ nome.splice(2,1) // no caso aqui removeu o neguin
 console.log(nome.includes('vn'))
 
 
+
+
+
+
 // boas vindas para todos
 let tamanho = nome.length
 
