@@ -164,7 +164,7 @@ console.log("Bem vindo a aula - 14!");
 //        } else {
 //         console.log('Conta criada com sucesso para ' + conta)
 //        }
-//         break;
+//         break; 
 //     case 2:
 //         prompt('Digite seu e-mail')
 //         prompt('Digite sua senha:')
@@ -210,11 +210,10 @@ console.log("Bem vindo a aula - 14!");
 
 
 // // ATV repetir ate que saia do sistema
-// let numero = parseInt(prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - cadastrar usuario \n2 - Listar usuario \n3 - sair do sistema" ));
+// let opcao = (prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - cadastrar usuario \n2 - Listar usuario \n3 - sair do sistema" ));
 
-// let menu = 0
-// while (menu !== 3) {
-//       switch (menu) {
+// while (opcao !== 3) {
+//       switch (opcao) {
 //             case 1:
 //                   console.log('cadastro de usuario')
 //                   break;
@@ -224,16 +223,48 @@ console.log("Bem vindo a aula - 14!");
 //             case 3:
 //                   console.log('Sair do sistema')
 //                   break;
-//             case 4:
-//                    console.log('Sair do sistema')
-//                   break;
 //            default:
 //             console.log('sair')       
-// }}
+// }
+// let opcao = parseInt(prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - cadastrar usuario \n2 - Listar usuario \n3 - sair do sistema" ));
+// }
+
 
 // ATE 3 PEDIDOS COM LOOP FOR
 // let pedido = parseInt(prompt("Digite um número de 1 a 3 para escolher um pedido:\n1 - Pizza \n2 - Hambúrguer \n3 - Refrigerante" ));
-let i = 10
-for (let i = 0; i < 10; i++){
-      console.log('Testando ' + i)
-}
+// let i = 3
+// for (let i = 0; i <= 3; i++){
+//       let desejo = prompt('digite seupedido')
+//       console.log(desejo, + i)
+// }
+
+// let valorCompra = Number(prompt('digite o valor da parcela'))
+// let numeroDeParcelas = parseInt(prompt('digite o numero de parcela'))
+
+// let = valorCompra/numeroDeParcelas
+
+// for (let i = 1; i <= numeroDeParcelas; i++) {
+//       console.log('Parcela ' + i + ': R$ ' + valorCompra);
+// }
+// while (numeroDeParcelas > 0 && numeroDeParcelas <= 12) {
+//       numeroDeParcelas = parseInt(prompt('digite o numero de parcela'))
+// }
+// console.log('Número de parcelas inválido. Digite um número entre 1 e 12.');
+
+// let nota
+// let aprovado = 0
+// let reprovado = 0
+
+// for(let i=0; i<5; i++){
+//       nota = parseFloat(prompt('digite sua nota'))
+//       if( nota >= 7 ){
+//         console.log(`aluno ${i}  = aprovado`)
+//       } else {
+//             console.log('aluno ' + i + ' reprovado')
+//       }
+// }
+
+// for(num = 0; num <= 10; num++){
+//       console.log('o numero é '+ num)
+// }
+
