@@ -232,7 +232,8 @@ console.log("Bem vindo a aula - 14!");
 // }}
 
 // ATE 3 PEDIDOS COM LOOP FOR
-let pedido = parseInt(prompt("Digite um número de 1 a 3 para escolher um pedido:\n1 - Pizza \n2 - Hambúrguer \n3 - Refrigerante" ));
-for (let i = 0; i < 4; i++){
-      console.log('Pedidos')
-}
+// let pedido = parseInt(prompt("Digite um número de 1 a 3 para escolher um pedido:\n1 - Pizza \n2 - Hambúrguer \n3 - Refrigerante" ));
+// for (let i = 0; i < 4; i++){
+//       console.log('Pedidos')
+// }
+
