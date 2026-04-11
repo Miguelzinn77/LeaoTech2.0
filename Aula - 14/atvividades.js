@@ -12,12 +12,12 @@ if (numeros % 2 === 0) {
 } 
 
                 // NOTA MAIOR QUE 7
-let nota = parseFloat(prompt("Digite sua nota:"));
-if (nota > 7) {
-    console.log("Sua nota é maior que 7, está aprovado.");
-} else {
-    console.log("Recuperação.");
-}
+// let nota = parseFloat(prompt("Digite sua nota:"));
+// if (nota > 7) {
+//     console.log("Sua nota é maior que 7, está aprovado.");
+// } else {
+//     console.log("Recuperação.");
+// }
 
                 // NUMERO POSITIVO
 let numero = parseFloat(prompt("Digite um número:"));
@@ -118,40 +118,40 @@ switch (letra) {
 }
 
                 // SISTEMA DE ATENDIMENTO
-let opcao = parseInt(prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - criar conta \n2 - fazer login \n3 - Recuperar senha" ));
-switch (opcao) {
-    case 1:
-      var conta = prompt('crie o nome da sua conta')
-      var email = prompt('digite seu e-mail')
-      var senha = prompt('crie sua senha')
-       // NAO SEI SE ESSE IF FUNCIONA MAS VAI ASSIM MESMO
-      if (conta == true && email == true && senha == true) {
-       console.log('usuario criado com sucesso!')
-       } else if (conta == false || email == false || senha == false) {
-         console.log('erro de cadastro')
-       } else {
-        console.log('Conta criada com sucesso para ' + conta)
-       }
-        break; 
-    case 2:
-        // FAZER LOGIN
-        prompt('Digite seu e-mail')
-        prompt('Digite sua senha:')
-        console.log('Login com concluido')
-        break;
-    case 3:
-        // RECUPERAR SENHA
-       var login = prompt('Digite seu email')
-       var acesso = prompt('Deseja receber código por email ou SMS?')
-       if (login == true && acesso == true){
-        console.log('Instruções enviadas');
-       } else {
-        console.log('tente novamente')
-       }
-        break;
-    default:
-        console.log('opção inválida')
-}
+// let opcao = parseInt(prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - criar conta \n2 - fazer login \n3 - Recuperar senha" ));
+// switch (opcao) {
+//     case 1:
+//       var conta = prompt('crie o nome da sua conta')
+//       var email = prompt('digite seu e-mail')
+//       var senha = prompt('crie sua senha')
+//        // NAO SEI SE ESSE IF FUNCIONA MAS VAI ASSIM MESMO
+//       if (conta == true && email == true && senha == true) {
+//        console.log('usuario criado com sucesso!')
+//        } else if (conta == false || email == false || senha == false) {
+//          console.log('erro de cadastro')
+//        } else {
+//         console.log('Conta criada com sucesso para ' + conta)
+//        }
+//         break; 
+//     case 2:
+//         // FAZER LOGIN
+//         prompt('Digite seu e-mail')
+//         prompt('Digite sua senha:')
+//         console.log('Login com concluido')
+//         break;
+//     case 3:
+//         // RECUPERAR SENHA
+//        var login = prompt('Digite seu email')
+//        var acesso = prompt('Deseja receber código por email ou SMS?')
+//        if (login == true && acesso == true){
+//         console.log('Instruções enviadas');
+//        } else {
+//         console.log('tente novamente')
+//        }
+//         break;
+//     default:
+//         console.log('opção inválida')
+// }
 
                 // SAQUE E DEPOSITO
 let sistema = prompt('\n1 - consultar saldo \n2 - sacar \n3 - depositar');
