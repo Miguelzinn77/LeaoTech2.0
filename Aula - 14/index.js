@@ -164,7 +164,7 @@ console.log("Bem vindo a aula - 14!");
 //        } else {
 //         console.log('Conta criada com sucesso para ' + conta)
 //        }
-//         break;
+//         break; 
 //     case 2:
 //         prompt('Digite seu e-mail')
 //         prompt('Digite sua senha:')
@@ -210,11 +210,10 @@ console.log("Bem vindo a aula - 14!");
 
 
 // // ATV repetir ate que saia do sistema
-// let numero = parseInt(prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - cadastrar usuario \n2 - Listar usuario \n3 - sair do sistema" ));
+// let opcao = (prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - cadastrar usuario \n2 - Listar usuario \n3 - sair do sistema" ));
 
-// let menu = 0
-// while (menu !== 3) {
-//       switch (menu) {
+// while (opcao !== 3) {
+//       switch (opcao) {
 //             case 1:
 //                   console.log('cadastro de usuario')
 //                   break;
@@ -224,16 +223,15 @@ console.log("Bem vindo a aula - 14!");
 //             case 3:
 //                   console.log('Sair do sistema')
 //                   break;
-//             case 4:
-//                    console.log('Sair do sistema')
-//                   break;
 //            default:
 //             console.log('sair')       
-// }}
-
-// ATE 3 PEDIDOS COM LOOP FOR
-// let pedido = parseInt(prompt("Digite um número de 1 a 3 para escolher um pedido:\n1 - Pizza \n2 - Hambúrguer \n3 - Refrigerante" ));
-// for (let i = 0; i < 4; i++){
-//       console.log('Pedidos')
+// }
+// let opcao = parseInt(prompt("Digite um número de 1 a 3 para escolher uma opção:\n1 - cadastrar usuario \n2 - Listar usuario \n3 - sair do sistema" ));
 // }
 
+
+// ATE 3 PEDIDOS COM LOOP FOR
+let pedido = parseInt(prompt("Digite um número de 1 a 3 para escolher um pedido:\n1 - Pizza \n2 - Hambúrguer \n3 - Refrigerante" ));
+for (let i = 0; i < 4; i++){
+      console.log('Pedidos')
+}
