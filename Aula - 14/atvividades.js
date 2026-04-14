@@ -285,5 +285,5 @@ do {
         default:
             console.log('Sair.');
     }
-} while (menu !== 3); 
-
+    // enquanto nao for igual a 3
+} while (menu !== 3);
