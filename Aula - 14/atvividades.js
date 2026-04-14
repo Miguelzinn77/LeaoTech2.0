@@ -266,7 +266,6 @@ do {
     // SWITCH para escolher os numeros
     switch (menu) {
         case 1:
-            // TU É DOIDO DIONÍSIO JÁ É SETE DA NOITE E EU TO AQUI DESDE DE 9H DA MANHÃ JA HOMI
             var num1 = parseFloat(prompt('Digite o primeiro número:'));
             var num2 = parseFloat(prompt('Digite o segundo número:'));
             // aqui eu somo os numeros depois de ter declaradonas variaveis
@@ -275,17 +274,16 @@ do {
             break;
         case 2:
             var num1 = parseFloat(prompt('Digite o primeiro número:'));
-            var num2 = parseFloat(prompt('Digite o segundo número:'));
+            var num2 = parseFloat(prompt ('Digite o segundo número:'));
             // aqui eu tbm subtraio os numeros depois de ter declarado nas variaveis
             var subtracao = num1 - num2;
             console.log('A subtração é: ' + subtracao);
             break;
         case 3:
-            // o 3 acho q seria so o default mas eu coloquei mesmo assim
             console.log('Saindo do sistema...');
             break;
         default:
             console.log('Sair.');
     }
-} while (menu !== 3); // acho q acaba aq
+} while (menu !== 3); 
 
