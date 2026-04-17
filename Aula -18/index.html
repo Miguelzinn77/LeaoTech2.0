@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap-grid.min.css">
+    <title>Aula - 18</title>
+</head>
+<body>
+    <h1> Aula - 18 </h1>
+    
+
+<script>
+
+// //forEach permite iterar sobre os elementos de um array e executar uma função para cada elemento. O forEach é útil quando você deseja realizar uma ação para cada elemento do array, como imprimir valores, modificar elementos ou executar operações que não retornam um novo array.
+
+// let usuarios = ['maria', 'joao', 'carla', 'miguel']
+// usuarios.forEach(user) => {
+// console.log(`nome : ${user}`);
+// }
+
+//map cria um novo array a partir do array original, aplicando uma função a cada elemento do array original e retornando o resultado em um novo array. O map é útil quando você deseja transformar os dados de um array de alguma forma, como aplicar uma operação matemática, formatar strings ou extrair informações específicas.
+let precos = [100, 150, 88.99, 50];
+let precosDesconto = precos.map((preco) => {
+    let desconto = 0.9 * preco
+    return desconto;
+})
+console.log(precosDesconto);
+
+
+
+//filter cria um novo array contendo apenas os elementos do array original que atendem a uma determinada condição. O filter é útil quando você deseja filtrar os dados de um array com base em critérios específicos, como selecionar apenas os números pares, filtrar objetos com base em uma propriedade ou remover elementos indesejados.
+let precosMaisBaratos = precos.filter((preco) => {
+    return preco < 100; //retorna um novo array contendo apenas os preços que são menores que 100 do array de cima
+});
+console.log(precosMaisBaratos);
+
+usuarios = [
+    { nome: 'maria', ativo: true, nivel: 'admin' },
+    { nome: 'joao', ativo: false, nivel: 'user' },
+    { nome: 'carla', ativo: false, nivel: 'user' },
+    { nome: 'miguel', ativo: true, nivel: 'user' },
+]
+
+let usuariosAtivos = usuarios.filter((usuario) => {
+    return usuario.ativo; //retorna um novo array contendo apenas os objetos do array de cima onde a propriedade ativo é igual a true
+});
+console.log(usuariosAtivos);
+
+
+let usuariosInativos = usuarios.filter((usuario) => {
+    return !usuario.ativo; //retorna um novo array contendo apenas os objetos do array de cima onde a propriedade ativo é igual a false
+});
+console.log(usuariosInativos);
+
+
+let usuariosAdmin = usuarios.filter((usuario) => {
+    return usuario.ativo && usuario.nivel === 'admin'; //retorna um novo array contendo apenas os objetos do array de cima onde a propriedade nivel é igual a 'admin'
+});
+console.log(usuariosAdmin);
+
+
+//reduce é um método de array que permite reduzir um array a um único valor, aplicando uma função acumuladora a cada elemento do array. O reduce é útil quando você deseja realizar operações de agregação, como somar valores, calcular médias, concatenar strings ou criar objetos a partir de um array.
+let total = precos.reduce((acumulador, preco) => {
+    return acumulador + preco; //retorna a soma de todos os preços do array de cima, onde o acumulador começa com o valor inicial de 0 e é atualizado a cada iteração com o valor do preço atual.
+}, 0);
+console.log(total);
+
+
+</script>
+
+
+    <script src="index.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
