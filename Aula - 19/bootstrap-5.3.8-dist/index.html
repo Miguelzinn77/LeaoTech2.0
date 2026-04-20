@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Aula - 19</title>
+  </head>
+  <body onload="eventoTela('carregou')">
+
+<script>
+    function eventoTela(tipo) {
+      if (tipo === 'carregou') {
+        alert('A página foi carregada com sucesso!');
+      }
+    }
+</script>
+
+    <style>
+      .caixa-1 {
+        height: 100px;
+        text-align: center;
+      }
+
+      .caixa-2 {
+        height: 100px;
+        text-align: center;
+      }
+
+      .caixa-3 {
+        height: 100px;
+        text-align: center;
+      }
+    </style>
+
+    <h1 class="name">Aula - 19</h1>
+    <p>Eventos e Manipulação do DOM</p>
+
+    <br />
+    <p>apenas um clique</p>
+    <div onclick="enviarMensagem()" id="caixa-1" class="caixa-1 bg-danger">caixa 1</div>
+
+    <br />
+
+    <!-- a função dispararMensagem() é chamada quando a caixa 2 é clicada duas vezes, exibindo um alerta com a mensagem "click up!". -->
+    <p>dois cliques</p>
+    <div ondblclick="dispararMensagem()" class="caixa-2 bg-body-secondary">caixa 2</div>
+
+    <br />
+
+    <!-- a função enviarMensagem() é chamada quando o mouse passa sobre a caixa 3, exibindo um alerta com a mensagem "Mensagem enviada com sucesso!". -->
+    <p>passar o mouse sobre a caixa 3</p>
+    <div onmouseover="enviarMensagem()" class="caixa-3 bg-danger-subtle">caixa 3</div>
+
+<br>
+
+<div class="mt-3 border border-dark p-3 w-75">
+    <h2 class="name"> Eventos de teclado </h2>
+
+<form action="" method="get" onsubmit="enviarFormulario(event)">
+<label for="nome">Nome:</label>
+<input onfocus="eventosFormulario('foco')" type="text">
+
+<br>
+
+<label for="nome">Nome:</label>
+<input oninput="eventosFormulario('input')" type="text"> <!-- o evento oninput é acionado sempre que o valor do campo de entrada é alterado, seja por meio de digitação, colagem ou exclusão. --> 
+
+<br>
+
+<label for="profissao">Profissão:</label>
+<input onchange="eventosFormulario('change')" type="text"> <!-- o evento onchange é acionado quando o elemento perde o foco e seu valor foi modificado. -->
+
+<br>
+
+<label for="profissao"></label>
+<input onsubmit="enviarFormulario('enviar')" type="submit" value="enviar"> <!-- o evento onsubmit é acionado quando um formulário é enviado, seja por meio de um clique no botão de envio ou pressionando a tecla Enter. -->
+
+</form>
+</div>
+
+<div class="mt-5">
+<button onclick="funcao()" class="bg-info">clique aqui</button>
+</div>
+
+<script>
+function funcao() {
+    let pessoa = {
+        nome: 'João',
+        idade: 30,
+        profissao: 'Desenvolvedor',
+
+        falar : function() {
+            console.log('Olá, meu nome é ' + this.nome + ' e tenho ' + this.idade + ' anos. Minha profissão é ' + this.profissao + '.'); 
+            // <!-- a palavra-chave this é usada para acessar as propriedades do objeto dentro da função falar. -->
+        }
+    };
+    console.log(pessoa.nome);
+    pessoa.falar();
+}
+</script>
+
+    <script src="index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
