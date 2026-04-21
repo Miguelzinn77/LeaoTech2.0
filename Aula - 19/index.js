@@ -40,3 +40,4 @@ console.log(document.querySelector('#caixa-1')); //seleciona o elemento com o id
 
 console.log(document.querySelectorAll('.caixa-2')); //seleciona todos os elementos com a classe 'caixa-2' usando um seletor CSS e exibe no console.
 
+// dom, usar nome do elemento para acessar suas propriedades e métodos
