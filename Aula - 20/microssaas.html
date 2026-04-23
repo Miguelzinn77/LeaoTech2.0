@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendaPro | Seu Microsaas de Agendamentos</title>
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --dark: #0b202f;
+            --light: #f8f9fa;
+            --success: #198754;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light);
+            color: #212529;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px auto 30px;
+            max-width: 760px;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .pricing-card {
+            border: 1px solid rgba(13, 110, 253, 0.2);
+            border-radius: 16px;
+            transition: transform 0.2s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-6px);
+        }
+        .footer {
+            background-color: #12181f;
+            color: #adb5bd;
+            padding: 30px 0;
+        }
+        .cta-banner {
+            background-color: #0d6efd;
+            color: white;
+            padding: 50px 0;
+        }
+        .cta-banner h2 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <span class="badge bg-light text-dark mb-3">Microsaas pronto para vender</span>
+            <h1>AgendaPro: Sua solução de agendamento e vendas para serviços locais</h1>
+            <p>Plataforma pronta para barbearias, salões, estúdios, consultórios e freelancers. Aumente sua receita com reservas online, lembretes automáticos e marketing inteligente.</p>
+            <a href="#planos" class="btn btn-light btn-lg">Ver Planos e Começar</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2>Por que este nicho vai bombar?</h2>
+                        <p>Pequenos negócios de serviços locais estão buscando digitalização rápida. Um microsaas de agendamentos com automações e pagamento integrado é fácil de vender, baixo custo para o cliente e gera receita recorrente em 2 anos.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Clientes pagam mensalidade por simplicidade.</li>
+                            <li class="list-group-item">Lucro vezes 10: custo baixo e escala nacional.</li>
+                            <li class="list-group-item">Principais setores: beleza, saúde, consultoria, aulas e manutenção.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">O que o AgendaPro oferece</h5>
+                                <p class="card-text">Uma plataforma centralizada para clientes reservarem horários, receberem SMS/WhatsApp automáticos e pagar online com poucos cliques.</p>
+                                <ul class="list-unstyled">
+                                    <li>✔ Calendário inteligente</li>
+                                    <li>✔ Confirmação automática</li>
+                                    <li>✔ Pagamento antecipado</li>
+                                    <li>✔ Relatórios de vendas</li>
+                                    <li>✔ Marketing por e-mail</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Funcionalidades que vendem todo mês</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 text-center">
+                        <div class="feature-icon">📆</div>
+                        <h4>Agenda 24/7</h4>
+                        <p>Cliente agenda online, sem telefone, reduz no-shows e aumenta ocupação.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="feature-icon">💬</div>
+                        <h4>Comunicação automática</h4>
+                        <p>Lembretes por SMS ou WhatsApp e confirmação automática para reduzir faltas.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="feature-icon">💳</div>
+                        <h4>Pagamento integrado</h4>
+                        <p>Receba depósito ou parcelamento no momento da reserva, evitando cancelamentos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Planos simples e lucrativos</h2>
+                <div class="row g-4" id="planos">
+                    <div class="col-md-4">
+                        <div class="pricing-card p-4 h-100 bg-white shadow-sm">
+                            <h3>Starter</h3>
+                            <p class="display-6">R$ 49/mês</p>
+                            <p>Agenda online, 1 usuário, notificações básicas e painel de vendas.</p>
+                            <button class="btn btn-primary w-100" onclick="selecionarPlano('Starter', 49)">Escolher Starter</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-card p-4 h-100 bg-white shadow-sm border-primary">
+                            <span class="badge bg-primary mb-3">Mais popular</span>
+                            <h3>Pro</h3>
+                            <p class="display-6">R$ 99/mês</p>
+                            <p>Multiusuário, lembretes SMS/WhatsApp, pagamento parcial e relatórios avançados.</p>
+                            <button class="btn btn-primary w-100" onclick="selecionarPlano('Pro', 99)">Escolher Pro</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-card p-4 h-100 bg-white shadow-sm">
+                            <h3>Premium</h3>
+                            <p class="display-6">R$ 149/mês</p>
+                            <p>Todos os recursos + integração com Instagram, chat e suporte prioritário.</p>
+                            <button class="btn btn-primary w-100" onclick="selecionarPlano('Premium', 149)">Escolher Premium</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-success mt-4 d-none" id="confirmacaoPlano"></div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Exemplo rápido de ideia de negócio</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Produto:</strong> SaaS de agendamentos e lembretes para negócios locais.</p>
+                        <p><strong>Nicho:</strong> barbeiros, manicures, nutricionistas, personal trainers, fotógrafos.</p>
+                        <p><strong>Métrica de sucesso:</strong> conquistar 200 clientes pagantes em 12 meses e manter churn abaixo de 5%.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><strong>Plano de monetização:</strong></p>
+                        <ul>
+                            <li>Assinatura mensal</li>
+                            <li>Taxa adicional por lembrete SMS</li>
+                            <li>Pacote de onboarding com configuração inicial</li>
+                        </ul>
+                        <p><strong>Por que funciona:</strong> negócios locais já pagam por Google Ads e anúncios; trocar para um sistema que garante reservas e reduz faltas é fácil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner text-center">
+            <div class="container">
+                <h2>Prepare sua oferta e venda em 30 dias</h2>
+                <p class="mb-4">Use este modelo para mostrar sua ideia e lançar rapidamente uma versão inicial para vendas.</p>
+                <a href="#planos" class="btn btn-outline-light btn-lg">Comece agora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-1">AgendaPro © 2026</p>
+            <p class="small">Pronto para ser usado como página de vendas para seu microsaas.</p>
+        </div>
+    </footer>
+
+    <script>
+        function selecionarPlano(plano, valor) {
+            const mensagem = document.getElementById('confirmacaoPlano');
+            mensagem.textContent = `Você selecionou o plano ${plano} por R$ ${valor}/mês. Entre em contato para montar seu microsaas rapidamente!`;
+            mensagem.classList.remove('d-none');
+        }
+    </script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

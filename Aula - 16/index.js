@@ -30,6 +30,8 @@ console.log("Bem vindo a aula 16");
 // }
 // console.log("A soma dos preços é: " + soma);
 
+
+
 // crie um sistema para cadastar uma lista de convidado , usuario tera duas opcoes, cadastrar e sair, depois de cadastrar todos os usuarios, crie um programa que peça para o usuario digitar seu nome e veja se ele esta na lista de usuarios, se tiver boas vindas, se nao tiver diga que nao foi convidado
 
 // let convidados = [];
