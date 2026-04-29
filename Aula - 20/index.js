@@ -73,8 +73,6 @@ console.log(usuario2);
 
 
 
-
-
 //                 // IMC
 // function calcularImc() {
 //     let inputPeso = document.getElementById('peso').value
@@ -92,3 +90,15 @@ console.log(usuario2);
 // divResultado.innerHTML = <h5 class=""> seu imc é + imc </h5>
 
 
+const api_url = 'https://api.coingecko.com/api/v3/simple/price?vs_currencies=brl&ids=bitcoin&names=Bitcoin&symbols=btc'
+
+async function buscarPrecos(){
+const responde = await fetch(api_url)
+const dados = await responde.json()
+
+console.log(dados)
+}
+
+buscarPrecos()
+
+//async await
