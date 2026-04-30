@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <title>Aula - 22</title>
+  </head>
+  <body style="margin-bottom: 500px;">
+
+    <h1 class="bg-body-secondary text-center">Aula - 22</h1>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1>Faça seu cadastro</h1>
+            </div>
+            <div class="col-6">
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="idade">Idade</label>
+                <input type="text" name="idade" id="idade">
+            </div>
+
+            <div class="col-6">
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input oninput="lognumero()" type="text" name="cep" id="cep">
+                </div>
+                <div>
+                    <label for="cep">Rua:</label>
+                    <input type="text" name="rua" id="rua">
+                </div>
+                <div>
+                    <label for="cep">Complemento:</label>
+                    <input type="text" name="complemento" id="complemento">
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div>
+                    <label for="cep">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
+                <div>
+                    <label for="cep">Estado:</label>
+                    <input type="text" name="estado" id="estado">
+                </div>
+                <div>
+                    <label for="cep">Região:</label>
+                    <input type="text" name="regiao" id="regiao">
+                </div>
+            </div>
+        </div>
+   </div>
+
+
+
+
+<h1 class="bg-body-secondary text-center">Buscar Produto</h1>
+   <label for="number">numero: </label>
+        <input oninput="buscarApi()" type="number" name="number" id="number">
+    
+
+    <script src="index.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
