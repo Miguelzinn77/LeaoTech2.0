@@ -52,7 +52,7 @@ try {
 
 
 
-// ATIVIDADE BUSCAR API
+// BUSCAR API
 function buscarApi(){
   let idBusca = document.getElementById('number').value
   const url = `https://fakestoreapi.com/products/${idBusca}`
