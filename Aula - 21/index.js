@@ -32,17 +32,15 @@ containerCaixa.appendChild()
 
 let btnCep = document.getElementById('cep')
 btnCep.addEventListener('click', () =>{
-
+    
 let cep = document.getElementById('cep')
 
-fetch(`https://viacep.com.br/ws/${cep.value}/json/`).then(resp) => {
+fetch(`https://viacep.com.br/ws/${cep.value}/json/`).then((resp) => {
     return resp.json()
-}).then(dados) => {
+}).then((dados) => {
     console.log(dados)
     let divResposta = document.getElementById('resposta')
 
     divResposta.appendChild(paragrafos)
-}
-
-
+})
 })

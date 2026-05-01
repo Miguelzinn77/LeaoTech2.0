@@ -1,15 +1,15 @@
 console.log("bem vindo aula 22");
 
 function lognumero() {
-  const input = document.getElementById("cep");
-  console.log(`O numero foi: ${input.value.length}`);
+  const inputCep = document.getElementById("cep");
+  let cep = inputCep.value
+  // console.log(`O numero foi: ${input.value.length}`);
   //para contar o numero de vezes que foi digitado o numero no cep
 
 if (cep.length == 8){
-    console.log('acesso')
-    let inputCEP = document.getElementById('cep')
-    let cep = inputCep.value
+    
     let url = `https://viacep.com.br/ws/${cep}/json/`
+  
     fetch (url)
     .then((resp) => {
         return resp.json()
@@ -20,9 +20,9 @@ if (cep.length == 8){
         inputRua.value = dados.cep
         inputRua.setAttribute('disabled', 'disabled')
         
-         let inputLogradouro = document.getElementById('logradouro')
+         let inputLogradouro = document.getElementById('rua')
         console.log(dados)
-        inputRua.value = dados.logradouro
+        inputRua.value = dados.rua
         inputRua.setAttribute('disable', 'disable') 
 
         let inputEstado = document.getElementById('estado')
@@ -54,6 +54,8 @@ try {
 
 // BUSCAR API
 function buscarApi(){
+  
+  
   let idBusca = document.getElementById('number').value
   const url = `https://fakestoreapi.com/products/${idBusca}`
   fetch(url).then((resp) => {
