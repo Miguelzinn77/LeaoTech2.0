@@ -15,10 +15,10 @@ function App() {
   return (
     <>
     <h1 class="text-center">Olá mundo.</h1>
-    {/* <Header />
+     <Header />
     <Home />
     <Footer />
-    <Ola /> */}
+    <Ola /> 
     <Atividade />
     </>
   )
