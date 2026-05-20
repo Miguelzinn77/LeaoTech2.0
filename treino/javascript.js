@@ -33,7 +33,7 @@ while(pcr < 11){
 
 // Criar algo na página
 var novoParagrafo = document.createElement('p') //cria um parágrafo
-var texto = document.createTextNode('Conteudo do parágrafo')
+var texto = document.createTextNode('Mc Negão Original')
 novoParagrafo.appendChild(texto)
 console.log(novoParagrafo) // improme no f12
 
@@ -44,7 +44,8 @@ var body = document.querySelector('body') // seleciona a body
 body.appendChild(texto)
 
 
-// let body = document.querySelector('body')
-// let div = document.createElement('o Terror dos comedinha')
-// body.appendChild(div)
-// console.log(body)
+let ceara = document.createElement('div')
+let time = document.createTextNode( "o Terror dos comedinha não gosta de viatura, sempre driblando a receita que quer uma fatia do bolo. ")
+ceara.appendChild(time)
+console.log(ceara)
+body.appendChild(ceara) // appendChild é para mostrar na tela
