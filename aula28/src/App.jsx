@@ -8,7 +8,7 @@ import Sobre3 from "./components/Sobre3";
 import Formulario from "./page/formulario";
 
 function App() {
-    let [abaAtual, setAbaAtual] = useState("primeiro");
+    let [abaAtual, setAbaAtual] = useState("");
 
     return (
       <>
