@@ -1,4 +1,5 @@
 console.log("Praticando");
+
 //     0  1  2
 let num = [0, 2, 4, 10, 20];
 num[3] = 6; //adiciona no array na posição de indice 3, = [0, 2, 4, 6]
