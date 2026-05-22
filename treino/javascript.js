@@ -50,3 +50,99 @@ let time = document.createTextNode( "o Terror dos comedinha não gosta de viatur
 ceara.appendChild(time)
 console.log(ceara)
 body.appendChild(ceara) // appendChild é para mostrar na tela
+
+
+
+// Pegando o formulário do HTML
+const form = document.getElementById('form')
+
+form.addEventListener('submit', event => {
+
+let first = document.getElementById('firstName')
+let last = document.getElementById('lastName')
+let email = document.getElementById('Email')
+console.log(first.value)
+console.log(last.value)
+console.log(email.value)
+
+})
+
+console.log(form)
+
+
+// falar o nome no f12, treinando o this.
+const miguel = {
+  nome: 'Luis Miguel',
+   falar(){ return this.nome; }
+}
+console.log(miguel.falar());
+
+// Falar o nome da Gloria
+const Gloria = {
+  nome : 'Ashiley Gloria',
+  falar(){ return this.nome }
+}
+console.log(Gloria.falar());
+
+//Falar Ashiley
+let Ash = {
+  nome : 'Ashiley',
+  falar(){ return this.nome }
+}
+console.log(Ash.falar());
+
+//Falar Miguel
+let Mig = {
+  nome : 'Miguelzinn',
+  falar(){ return this.nome }
+}
+console.log(Mig.falar());
+
+// Falar Luís
+let Luis = {
+  nome : 'Luis', // uma virgula pode quebrar tudo kk
+  falar(){ return this.nome }
+}
+console.log(Luis.falar());
+
+// Falar Rosalina
+let Rosalina = {
+  nome : 'Rosalina',
+  falar(){return this.nome}
+}
+console.log(Rosalina.falar())
+
+// Falar Comando
+let CMD = {
+  nome : 'COMANDO',
+  falar(){ return this.nome }
+} 
+console.log(CMD.falar());
+
+// Falar tropa dol General
+let tropa = {
+  nome : 'Tropa do General',
+  falar(){ return this.nome }
+}
+console.log(tropa.falar());
+
+// FOR
+let cv = ''
+for(let cv = 0; cv <= 1; cv++){
+  console.log(`comando vermelho`)
+};
+
+
+// Pegar a Data atual
+let data = new Date()
+console.log(data);
+
+// Pegar o Ano atual
+let ano = data.getFullYear()
+console.log(ano);
+
+// Pegar o Mes
+let mes = data.getMonth()
+console.log(mes)
+
+
