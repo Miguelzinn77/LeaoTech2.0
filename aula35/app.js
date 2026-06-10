@@ -205,7 +205,6 @@ async function menu() {
           if (seCliente !== '0'){
             switch(seCliente) {
                 case '1':
-
                     await listarLivros()
                     break;
                     default:

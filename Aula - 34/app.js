@@ -1,3 +1,6 @@
+// npm init -y
+// npm install prompt-sync
+
 const prompt = require("prompt-sync")();
 const { createClient } = require("@supabase/supabase-js");
 require("dotenv").config();
