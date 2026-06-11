@@ -160,19 +160,24 @@ const supabase = createClient(
 
 // // inserirAutor
 
-// async function listarLivros() {
-//   const { data, error } = await supabase
-//     .from("biblioteca_livro")
-//     .select("titulo,genero,  biblioteca_autor(nome, nacionalidade)");
-//   console.log(data);
-//   console.log(error);
+app.get('/listarlivros', async (req, res) =>{
+ const { data, error } = await supabase
+    .from("biblioteca_livro")
+    .select("titulo,genero,  biblioteca_autor(nome, nacionalidade)");
 
-//   data.forEach((livro) => {
-//     console.log(
-//       `titulo: ${livro.titulo} - ${livro.biblioteca_autor.nome}, genero: ${livro.genero}, quantidade: ${livro.quantidade}`,
-//     );
-//   });
-// }
+    // console.log(data);
+    // console.log(error);
+
+    res.jason(data)
+});
+ 
+
+  // data.forEach((livro) => {
+  //   console.log(
+  //     `titulo: ${livro.titulo} - ${livro.biblioteca_autor.nome}, genero: ${livro.genero}, quantidade: ${livro.quantidade}`,
+  //   );
+  // });
+
 // // listarLivros();
 
 // // async function atualizarAutor(id){
@@ -242,8 +247,7 @@ const supabase = createClient(
 //     .eq(id);
 //   if (error) {
 //     console.log(error);
-//   }
-  // data.forEach((id) => {
+;  // data.forEach((id) => {
   //   console.log(
   //     `nome: ${id.nome}, cpf: ${id.cpf}, telefone: ${id.telefone}, endereco: ${id.endereco}, senha: ${id.senha}`,
   //   );
