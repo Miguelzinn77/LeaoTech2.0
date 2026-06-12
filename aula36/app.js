@@ -256,7 +256,7 @@ app.get('/listarlivros', async (req, res) =>{
 // atualizarRegistros();
 
 
-// word express
+// word express, npm install express, npm install nodemon, npm install dotenv, npm install bcrypt, npm install @supabase/supabase-js
 app.listen(3000, ()=> {
   console.log('olá mundo')
 })
