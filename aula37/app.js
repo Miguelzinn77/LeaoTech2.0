@@ -1,4 +1,4 @@
-const prompt = require("prompt-sync")();
+const prompt = require('prompt-sync')();
 const { createClient } = require("@supabase/supabase-js");
 require("dotenv").config();
 const bcrypt = require("bcrypt"); // bcrypt, para criptografar a senha(brabo de quebrar viu)
