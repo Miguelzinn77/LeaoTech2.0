@@ -427,7 +427,8 @@ app.put("/atualizarlivro/:id_livro", async (req, res) => {
   const atualizacoes = req.body;
   const { data, error } = await supabase
     .from("biblioteca_livro")
-    .update(atualizacoes);
+    .update(atualizacoes)
+    .eq('id', id_livro); // id do livro
 
   if (error) {
     console.log(error);
@@ -441,5 +442,6 @@ app.put("/atualizarlivro/:id_livro", async (req, res) => {
 app.path("/");
 
 app.listen(3000, () => {
+  // res.send('Servidor rodando')
   console.log("acesse o site em: http://localhost:3000");
 });
